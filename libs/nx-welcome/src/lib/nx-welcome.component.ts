@@ -433,7 +433,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
         <div id="welcome">
           <h1>
             <span> Hello there, </span>
-            Welcome second-app 👋
+            Welcome {{appName}} 👋
           </h1>
         </div>
 
@@ -844,7 +844,10 @@ nx affected:e2e</pre>
   encapsulation: ViewEncapsulation.None,
 })
 export class NxWelcomeComponent implements OnInit {
-  constructor() {}
 
-  ngOnInit(): void {}
+  public appName = "";
+
+  ngOnInit(): void {
+    this.appName = "FooBar";
+  }
 }
