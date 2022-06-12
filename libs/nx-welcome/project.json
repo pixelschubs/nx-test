@@ -1,13 +1,13 @@
 {
   "projectType": "library",
-  "sourceRoot": "libs/test-library/src",
+  "sourceRoot": "libs/nx-welcome/src",
   "prefix": "test-organization",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/test-library"],
+      "outputs": ["coverage/libs/nx-welcome"],
       "options": {
-        "jestConfig": "libs/test-library/jest.config.ts",
+        "jestConfig": "libs/nx-welcome/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -15,8 +15,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/test-library/**/*.ts",
-          "libs/test-library/**/*.html"
+          "libs/nx-welcome/**/*.ts",
+          "libs/nx-welcome/**/*.html"
         ]
       }
     }

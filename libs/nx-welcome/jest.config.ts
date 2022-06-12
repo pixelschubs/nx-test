@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'test-library',
+  displayName: 'nx-welcome',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/libs/test-library',
+  coverageDirectory: '../../coverage/libs/nx-welcome',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

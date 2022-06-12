@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@test-organization/test-library": ["libs/test-library/src/index.ts"]
+      "@test-organization/nx-welcome": ["libs/nx-welcome/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
